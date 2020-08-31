@@ -1,0 +1,9 @@
+# This file is outdated. Last compatible commit:
+# 9b38390ac20ef03020392796ed97d77f7fb61f98
+
+flags: {}
+packages:
+- .
+extra-deps:
+- turtle-1.5.2
+resolver: lts-10.4
