@@ -118,7 +118,7 @@
     <ul>
         <li> Received  "Outstanding PhD Thesis Award" from IIT Kanpur.</a></li>
       <li> Our work on 'Bias-free learning' has been accepted at <a href="https://aaai.org/Conferences/AAAI-22/" >AAAI-22.</a></li>
-      <!-- <li> Our work on 'Context learning-based 3D face generation' has been accepted at <a href="https://wacv2022.thecvf.com/" >WACV-22.</a></li> -->
+      <li> Our work on 'Context learning-based 3D face generation' has been accepted at <a href="https://wacv2022.thecvf.com/" >WACV-22.</a></li>
       <li> <a href="https://www.journals.elsevier.com/image-and-vision-computing" >ICCV 2021 </a>Doctoral Consortium.</li>
         <li> 'Uncertainty based VQG (MUMC)' has been accepted at <a href="https://iccv2021.thecvf.com/home" >Image Vision Computing</a> Journal - Elsevier.</li>
         <li> 'Dropout Domain Adaptation' has been accepted at <a href="https://www.journals.elsevier.com/neurocomputing" >NeuroComputing</a> Journal - Elsevier .</li>
@@ -188,11 +188,11 @@
       </p>
 
       <div class="paper" id="aaai22">
-     <!--  <a href="https://vinodkkurmi.github.io/">webpage</a> |
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S092523122100967X">pdf</a> | -->
+      <a href="https://vinodkkurmi.github.io/GBA">webpage</a> |
+      <!-- <a href="https://www.sciencedirect.com/science/article/abs/pii/S092523122100967X">pdf</a> | -->
       <a href="javascript:toggleblock(&#39;aaai22_abs&#39;)">abstract</a> |
       <a shape="rect" href="javascript:togglebib(&#39;aaai22&#39;)" class="togglebib">bibtex</a> |
-      <!-- <a href="https://vinodkkurmi.github.io/">code</a> | -->
+      <a href="https://github.com/vinodkkurmi/GBA">code</a> |
 
       <p align="justify"> <i id="aaai22_abs" style="display: none;">Bias mitigation in machine learning models is imperative, yet challenging. While several approaches have been proposed, one view towards mitigating bias is through adversarial learning. A discriminator is used to identify the bias attributes such as gender, age or race in question.  This discriminator is used adversarially to ensure that it cannot distinguish the bias attributes.  The main drawback in such a model is that it directly introduces a trade-off with accuracy as the features that the discriminator deems to be sensitive for discrimination of bias could be correlated with classification. In this work we solve the problem. We show that a biased discriminator can actually be used to improve this bias-accuracy tradeoff. Specifically, this is achieved by using a feature masking approach using the discriminator's gradients. We ensure that the features favoured for the bias discrimination are de-emphasized and the unbiased features are enhanced during classification. We show that this simple approach works well to reduce bias as well as improve accuracy significantly. We evaluate the proposed model on standard benchmarks. We improve the accuracy of the adversarial methods while maintaining or even improving the unbiasness and also outperform several other recent methods. </i></p>
 
@@ -220,25 +220,25 @@ Year   = {2022}
 
 <!-- StarttPaper one -->
 
-<!--    <tr>
-    <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/wacv22.png" alt="sym" width="100%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
-        <td width="67%" valign="top" style="padding-top:10px">
+   <tr>
+    <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/wacv2022.png" alt="sym" width="100%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
+        <td width="50%" valign="top" style="padding-top:10px">
       <p><a href="https://vinodkkurmi.github.io/" id="wacv22_id">
-         <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+         <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
   <heading>Occlusion Resistant Network for 3D Face Reconstruction</heading></a><br>
       H. Tiwari, <strong>Vinod K Kurmi</strong>, Venkatesh K Subramanian, Yong-Sheng Chen<br>
        <em>IEEE Winter Conference of Applications on Computer Vision (WACV)</em>, 2022
-      </p> -->
+      </p>
 
- <!--      <div class="paper" id="wacv22">
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S092523122100967X">pdf</a> |
+      <div class="paper" id="wacv22">
+      <a href="https://openaccess.thecvf.com/content/WACV2022/html/Tiwari_Occlusion_Resistant_Network_for_3D_Face_Reconstruction_WACV_2022_paper.html">pdf</a> |
       <a href="javascript:toggleblock(&#39;wacv22_abs&#39;)">abstract</a> |
-      <a shape="rect" href="javascript:togglebib(&#39;wacv22&#39;)" class="togglebib">bibtex</a> | -->
+      <a shape="rect" href="javascript:togglebib(&#39;wacv22&#39;)" class="togglebib">bibtex</a> |
       <!-- <a href="https://vinodkkurmi.github.io/">code</a> | -->
-<!-- 
-      <p align="justify"> <i id="wacv22_abs" style="display: none;">3D face reconstruction from a monocular face image is a mathematically ill-posed problem. Recently, we observed a surge of interest in deep learning-based approaches to address the issue. These methods possess extreme sensitivity towards occlusions. Thus, in this paper, we present a novel context-learning-based distillation approach to tackle the occlusions in the face images. Our training pipeline focuses on distilling the knowledge from a pre-trained occlusion-sensitive deep network. The proposed model learns the context of the target occluded face image. Hence our approach uses a weak model (unsuitable for occluded face images) to train a highly robust network towards partially and fully-occluded face images. We obtain a landmark accuracy of $0.77$ against $5.84$ of recent state-of-the-art-method for real-life challenging facial occlusions. Also, we propose a novel end-to-end training pipeline to reconstruct 3D faces from multiple variations of the target image per identity to emphasize the significance of visible facial features during learning. For this purpose, we leverage a novel composite multi-occlusion loss function. Our multi-occlusion per identity model shows a dip in the landmark error by a large margin of $6.67$ in comparison to a recent state-of-the-art method. We deploy the occluded variations of the CelebA validation dataset and AFLW2000-3D face dataset: naturally-occluded and artificially occluded, for the comparisons. We comprehensively compare our results with the other approaches concerning the accuracy of the reconstructed 3D face mesh for occluded face images.. </i></p> -->
 
-<!--  <pre xml:space="preserve" style="display: none;">@inproceedings{tiwati_wacv22,
+      <p align="justify"> <i id="wacv22_abs" style="display: none;">3D face reconstruction from a monocular face image is a mathematically ill-posed problem. Recently, we observed a surge of interest in deep learning-based approaches to address the issue. These methods possess extreme sensitivity towards occlusions. Thus, in this paper, we present a novel context-learning-based distillation approach to tackle the occlusions in the face images. Our training pipeline focuses on distilling the knowledge from a pre-trained occlusion-sensitive deep network. The proposed model learns the context of the target occluded face image. Hence our approach uses a weak model (unsuitable for occluded face images) to train a highly robust network towards partially and fully-occluded face images. We obtain a landmark accuracy of $0.77$ against $5.84$ of recent state-of-the-art-method for real-life challenging facial occlusions. Also, we propose a novel end-to-end training pipeline to reconstruct 3D faces from multiple variations of the target image per identity to emphasize the significance of visible facial features during learning. For this purpose, we leverage a novel composite multi-occlusion loss function. Our multi-occlusion per identity model shows a dip in the landmark error by a large margin of $6.67$ in comparison to a recent state-of-the-art method. We deploy the occluded variations of the CelebA validation dataset and AFLW2000-3D face dataset: naturally-occluded and artificially occluded, for the comparisons. We comprehensively compare our results with the other approaches concerning the accuracy of the reconstructed 3D face mesh for occluded face images.. </i></p>
+
+ <pre xml:space="preserve" style="display: none;">@inproceedings{tiwati_wacv22,
 Author = {Tiwari, H.
 and Kurmi,Vinod Kumar
 and Venkatesh, KS and
@@ -247,7 +247,7 @@ Title = {Occlusion Resistant Network
  for 3D Face Reconstruction},
 Booktitle = {WACV},
 Year   = {2022}
-} -->
+}
 <!-- </pre>
       </div>
     </td>
