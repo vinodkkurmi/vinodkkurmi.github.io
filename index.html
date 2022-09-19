@@ -123,7 +123,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">IISER Bhopal I
 
  </p>
 
- <img src="./vinod_files/new.png"  width="4%" style="border-style: none"> Junior research fellow/project associates vacancy: <a href="https://www.iiserb.ac.in/assets_external/vacancy/r&d/90c0d925416abf268ae1a6d0620e10ba.pdf">[Details]</a>
+ <img src="./vinod_files/new.png"  width="4%" style="border-style: none"> Junior research fellow/project associates vacancy: <a href="https://www.iiserb.ac.in/assets_external/vacancy/r&d/67691f6762aa10f0df5d7c4d3c22fbb3.pdf">[Details]</a>
 <!-- <a> href="https://www.iiserb.ac.in/doaa/internship" >IISER Bhopal Internship Program</a>
  <>a href="https://ww1.iiserb.ac.in/doaa/phd-admission"> PhD programme</a -->
 
@@ -200,13 +200,50 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">IISER Bhopal I
     <tbody>
 
 
+<!-- StarttPaper one -->
+   <tr>
+    <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/intersp.jpg" alt="sym" width="110%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
+        <td width="67%" valign="top" style="padding-top:10px">
+      <p><a href="https://vinodkkurmi.github.io/" id="interspeech22_id">
+         <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+  <heading>Generalized Keyword Spotting using ASR embeddings</heading></a><br>
+       Kirandevraj R, <strong>Vinod K Kurmi*</strong>, Vinay P Namboodiri, C V Jawahar<br>
+       <em>Conference of the International Speech Communication Association (Interspeech) </em> 2022, Incheon Korea
+      </p>
+      <div class="paper" id="interspeech22">
+      <a href="javascript:toggleblock(&#39;interspeech22_abs&#39;)">abstract</a> |
+      <a shape="rect" href="javascript:togglebib(&#39;interspeech22&#39;)" class="togglebib">bibtex</a> |
+      paper (coming soon) |
+
+      <p align="justify"> <i id="interspeech22_abs" style="display: none;">Keyword Spotting (KWS) detects a set of pre-defined spoken keywords. Building a KWS system for an arbitrary set re- quires massive training datasets. We propose to use the text transcripts from an Automatic Speech Recognition (ASR) sys- tem alongside triplets for KWS training. The intermediate rep- resentation from the ASR system trained on a speech corpus is used as acoustic word embeddings for keywords. Triplet loss is added to the Connectionist Temporal Classification (CTC) loss in the ASR while training. This method achieves an Average Precision (AP) of 0.843 over 344 words unseen by the model trained on the TIMIT dataset. In contrast, the Multi-View re- current method that learns jointly on the text and acoustic em- beddings achieves only 0.218 for out-of-vocabulary words. This method is also applied to low-resource languages such as Tamil by converting Tamil characters to English using transliteration. This is a very challenging novel task for which we provide a dataset of transcripts for the keywords. Despite our model not generalizing well, we achieve a benchmark AP of 0.321 on over 38 words unseen by the model on the MSWC Tamil keyword set. The model also produces an accuracy of 96.2% for classifi- cation tasks on the Google Speech Commands dataset. </i></p>
+
+ <pre xml:space="preserve" style="display: none;">@inproceedings{kiran_inter22,
+Author = {R,Kiran.
+and Kurmi, Vinod K
+and Namboodiri, Vinay P
+and Jawhar, CV},
+Title = {Generalized Keyword
+Spotting using ASR embeddings},
+Booktitle = {InterSpeech},
+Year   = {2022}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
+<!-- End paper  one -->
+
+
+
+
 
 <!-- StarttPaper one -->
    <tr>
     <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/aaai22.gif" alt="sym" width="110%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
         <td width="67%" valign="top" style="padding-top:10px">
       <p><a href="https://vinodkkurmi.github.io/" id="aaai22_id">
-         <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+         <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
   <heading>Gradient Based Activations for Accurate Bias-Free Learning</heading></a><br>
        <strong>Vinod K Kurmi*</strong>, Rishabh Sharma*, Yash Vardhan Sharma*, Vinay P Namboodiri (*equal contributions)<br>
        <em>Proceedings of the AAAI Conference on Artificial Intelligence, (AAAI), Vancouver BC, Canada,</em> 2022
@@ -1081,6 +1118,9 @@ year = {2019}
 </tbody></table>
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('interspeech22_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('aaai22_abs');
