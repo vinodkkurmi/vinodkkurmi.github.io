@@ -72,13 +72,22 @@
 <p align="center">
 
     <!-- <font size="7">Vinod K Kurmi</font><br> -->
-    <pageheading>Vinod K Kurmi</pageheading><br>
+    <pageheading>Vinod K Kurmi</pageheading><br><!-- 
      <b>Email</b>: vinodkk@iiserb.ac.in, vinodkumarkurmi@gmail.com
+    -->  <b>email</b>:&nbsp
+    <font id="email" style="display:inline;">
+      <noscript><i>Please enable Javascript to view</i></noscript>
+    </font>
+    <script>
+    emailScramble = new scrambledString(document.getElementById('email'),
+        'emailScramble', 'kdo.in@iinrvcksibea.',
+        [6,5,4,15,2,3,8,19,10,20,13,1,17,7,11,9,14,12,16,18]);
+    </script>
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
 
   <tbody><tr>
-    <td width="26%" valign="top"><a href="./vinod_files/profile_pic33.jpeg"><img src="./vinod_files/profile_pic33.jpeg" width="100%" style="border-radius:15px"></a>
+    <td width="26%" valign="top"><a href="./vinod_files/pr5.jpg"><img src="./vinod_files/pr5.jpg" width="100%" style="border-radius:15px"></a>
     <p align="center">
     | <a href="./vinod_files/vinodkk_cv.pdf">CV</a> | <a href="https://scholar.google.co.in/citations?user=Exo2VNAAAAAJ&hl=en">Google Scholar</a> |<br>|
     <a href="https://github.com/vinodkkurmi">Github</a> |
@@ -89,6 +98,7 @@
        <p>
    <b>Office Address:</b> 212B, Main (Plasma) Building, IISER Bhopal. </p>
     <p> <b> Phone No.:</b> +91 755 269 2689 </p>
+
 </p>
     </td>
     <td width="68%" valign="top" align="justify">
@@ -122,6 +132,21 @@
                 <p class="sz15 bold"><marquee behavior="scroll" direction="left" scrollamount="10">Code is Coming Soon! Stay Tuned!!</marquee></p>
             </div> -->
 We are seeking motivated researchers who are passionate about computer vision, machine learning, and deep learning. If you are interested, please send us your CV and highlight your areas of interest and experience. We have openings for junior research fellow/projects associates and PhDs in this groups.
+
+<!-- <blink> Current Opening for JRF/Project associates:  </blink> -->
+ <marquee direction="right"
+             behavior="alternate"
+             style="border:BLACK 0px SOLID">
+        <b>Current Opening for JRF/Project associates: </b>
+<a href="https://www.iiserb.ac.in/assets_external/vacancy/r&d/7e41e874f3a015fac40bd72f6a0ddbd9.pdf"> [Link]</a> 
+    </marquee>
+<!-- <marquee> <b>Current Opening for JRF/Project associates: </b>
+<a href="https://www.iiserb.ac.in/assets_external/vacancy/r&d/7e41e874f3a015fac40bd72f6a0ddbd9.pdf"> [Link]</a> </marquee> -->
+
+<!-- <marquee behavior="scroll" direction="right" scrollamount="12">Little Fast Scrolling</marquee> -->
+
+
+
 <p>
 For more details please visit the Visual Data Computing Group (<a href="https://vinodkkurmi.github.io/dcl">VisDom</a>).</p>
 
@@ -145,6 +170,9 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
     
     <ul>
+         <li> Delivered a lecture on 'Unlocking the Power of Transfer Learning: Revolutionizing AI with Limited Data Constraints' at the Faculty Development Program (FDP) held at RNTU Bhopal. </a></li>
+     
+ <li>  Our work on '3D Face Reconstruction' has been accepted at  <a href="https://www.journals.elsevier.com/image-and-vision-computing" >Image Vision Computing</a> Journal-Elsevier.</li>
         <li> Invited for a expert talk on "Basics of AI" at Science Day in Govt Polytechnic College, Sironj, Vidisha. </a></li>
         <li> Invited talk on "AI: Past, Present and Future" at ScienceFiesta2023 in Regional Science Centre, Bhopal </a></li>
         <li> Our work on 'Audio Keyword Spotting' has been accepted at <a href="https://interspeech2022.org/" >InterSpeech-22.</a></li>
@@ -211,10 +239,50 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 
 <!-- StarttPaper one -->
    <tr>
+    <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/ivc_3.jpg" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+        <td width="67%" valign="top" style="padding-top:10px">
+      <p><a href="https://vinodkkurmi.github.io/" id="ivc3_id">
+         <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+  <heading>Distilling Knowledge for Occlusion Robust Monocular 3D Face Reconstruction</heading></a><br>
+       H. Tiwari, <strong>Vinod K Kurmi</strong>, Venkatesh K Subramanian, Yong-Sheng Chen<br>
+      <em>Image and Vision Computing,(IMAVIS)</em>, 2023
+      </p>
+      <div class="paper" id="ivc3">
+      <a href="javascript:toggleblock(&#39;ivc3_abs&#39;)">abstract</a> |
+       <!-- <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/r22_interspeech.pdf">pdf</a> | -->
+      <a shape="rect" href="javascript:togglebib(&#39;ivc3&#39;)" class="togglebib">bibtex</a> |
+     
+
+      <p align="justify"> <i id="ivc3_abs" style="display: none;">Recently, there have been significant advancements in the 3D face reconstruction field, largely driven by monocular image-based deep learning methods. However, these methods still face challenges in reliable deployments due to their sensitivity to facial occlusions and inability to maintain identity consistency across different occlusions within the same facial image. To address these issues, we propose two frameworks: Distillation Assisted Mono Image Occlusion Robustification (DAMIOR) and Duplicate Images Assisted Multi Occlusions Robustification (DIAMOR). The DAMIOR framework leverages the knowledge from the Occlusion Frail Trainer (OFT) network to enhance robustness against facial occlusions. Our proposed method overcomes the sensitivity to occlusions and improves reconstruction accuracy. To tackle the issue of identity inconsistency, the DIAMOR framework utilizes the estimates from DAMIOR to mitigate inconsistencies in geometry and texture, collectively known as identity, of the reconstructed 3D faces. We evaluate the performance of DAMIOR on two variations of the CelebA test dataset: empirical occlusions and irrational occlusions. Furthermore, we analyze the performance of the proposed DIAMOR framework using the irrational occlusion-based variant of the CelebA test dataset. Our methods outperform state-of-the-art approaches by a significant margin. For example, DAMIOR reduces the 3D vertex-based shape error by 41.1% and the texture error by 21.8% for empirical occlusions. Besides, for facial data with irrational occlusions, DIAMOR achieves a substantial decrease in shape error by 42.5% and texture error by 30.5%. These results demonstrate the effectiveness of our proposed methods. </i></p>
+
+ <pre xml:space="preserve" style="display: none;">@inproceedings{hitika_ivc3,
+Author = {Tiwari, Hitika
+and Kurmi, Vinod K
+and  Subramanian,
+Venkatesh K and
+Chen, Yong Sheng },
+Title = {Distilling Knowledge
+for Occlusion Robust Monocular
+3D Face Reconstruction},
+Booktitle = {InterSpeech},
+Year   = {2022}
+}
+</pre>
+      </div>
+    </td>
+  </tr>
+
+<!-- End paper  one -->
+
+
+
+
+<!-- StarttPaper one -->
+   <tr>
     <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/intersp.jpg" alt="sym" width="110%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
         <td width="67%" valign="top" style="padding-top:10px">
       <p><a href="https://vinodkkurmi.github.io/" id="interspeech22_id">
-         <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+         <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
   <heading>Generalized Keyword Spotting using ASR embeddings</heading></a><br>
        Kirandevraj R, <strong>Vinod K Kurmi</strong>, Vinay P Namboodiri, C V Jawahar<br>
        <em>Conference of the International Speech Communication Association (Interspeech) </em> 2022, Incheon Korea
@@ -1128,6 +1196,9 @@ year = {2019}
 </tbody></table>
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('ivc3_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('interspeech22_abs');
