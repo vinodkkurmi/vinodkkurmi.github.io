@@ -74,12 +74,12 @@ Deadlines
 
 
 
-        <div id="ecai" class=" ML-conf ">
+        <div id="aaai" class=" ML-conf ">
           <div class="row">
               <div class="col-xs-12 col-sm-6">
-                  <a href="https://ecai2025.org/"><b>ECAI 2025</b></a>
+                  <a href="https://aaai.org/conference/aaai/aaai-26/"><b>AAAI 2026</b></a>
                   <div class="meta">
-                    October 25 - November 30, 2025 // <a href="http://maps.google.com/?q=Sheffield, UK">Bologna, Italy</a>
+                    Jan 20 - Jan 27, 2026 // <a href="http://maps.google.com/?q=Singapore,">Singapore</a>
                   </div>
               </div>
               <div class="col-xs-12 col-sm-6">
@@ -152,13 +152,13 @@ Deadlines
     // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
           var timezone = "America/Los_Angeles" ;
-          var confDate = moment.tz("2025-10-01 23:59:59", timezone);
+          var confDate = moment.tz("2025-08-01 23:59:59", timezone);
 
           // render countdown timer
-          $('#ecai .timer').countdown(confDate.toDate(), function(event) {
+          $('#aaai .timer').countdown(confDate.toDate(), function(event) {
             $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
           });
-          $('#ecai .deadline-time').html(confDate.toString());
+          $('#aaai .deadline-time').html(confDate.toString());
 
           // add calendar button
           var myCalendar = createCalendar({
@@ -166,25 +166,25 @@ Deadlines
               class: 'calendar-obj',
 
               // You can pass an ID. If you don't, one will be generated for you
-              id: 'ecai'
+              id: 'aaai'
             },
             data: {
               // Event title
-              title: 'ecai 2026 deadline',
+              title: 'aaai 2026 deadline',
 
               // Event start date
-              start: confDate.toDate(), // new Date('June 15, 2013 19:00'),
+              start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
 
               // Event duration
               duration: 60,
             }
           });
-          document.querySelector('#ecai .calendar').appendChild(myCalendar);
+          document.querySelector('#aaai .calendar').appendChild(myCalendar);
 
           // check if date has passed, add 'past' class to it
           var today = moment();
           if (today.diff(confDate) > 0)
-            $('#ecai').addClass('past');
+            $('#aaai').addClass('past');
 
 
   // Set checkboxes
