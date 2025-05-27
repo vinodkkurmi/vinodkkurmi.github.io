@@ -212,7 +212,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
     
-
+     <li> Paper accepted in <a href="https://www.interspeech2025.org/home" >Interspeech-2025 </a></li>
       <li> Invited for a discussion on <a href=" ./vinod_files/air.jpeg" >"AI and our Future"</a>  at <a href=" https://www.newsonair.gov.in/regional-units/bhopal/" >Akashvani, Bhopal .</a></li>
          <li> 3 Papers accepted in <a href="https://wacv2025.thecvf.com/" >WACV-25.</a></li>
           <li> Invited talk on 'AI on Radiantion Oncology' at ICRO Proadvance 2024 in PGIMER Chandigarh. </a></li>
@@ -288,6 +288,51 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
     <tbody>
+
+
+<!-- StarttPaper one -->
+<tr>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/interspeech25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+      <td width="67%" valign="top" style="padding-top:10px">
+    <p><a href="https://visdomlab.github.io/" id="interspeech25_id">
+       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+<heading>Multilingual Query-by-Example KWS using Transliteration</heading></a><br>
+Kirandevraj R, <strong>Vinod K Kurmi</strong>, Vinay P Namboodiri, C V Jawahar<br>
+<em>Conference of the International Speech Communication Association (Interspeech) </em> 2025, Rotterdam, The Netherlands.
+</p>
+<div class="paper" id="interspeech25">
+<a href="javascript:toggleblock(&#39;interspeech25_abs&#39;)">abstract</a> |
+<!-- <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/r22_interspeech.pdf">pdf</a> | -->
+<a shape="rect" href="javascript:togglebib(&#39;interspeech25&#39;)" class="togglebib">bibtex</a> |
+  
+
+  <p align="justify"> <i id="interspeech25_abs" style="display: none;"> Query-by-Example Keyword Spotting (QbE KWS) detects query audio within target audio. A common approach for multilingual QbE KWS uses phoneme posteriors as representations, with a shared phoneme dictionary across languages. We propose a novel method that replaces phoneme-based representations with transliteration, unifying transcripts from multiple Indian languages into the Devanagari script, a text script used for Hindi and Marathi. We train a Multilingual ASR model to predict transliterated Devanagari text from audio across 10 Indian languages. The character logits from this ASR serve as both query and target audio features. Using the Kathbath dataset for training and the IndicSUPERB QbE evaluation set, our approach achieves significant improvements. The average MTWV increased from 0.015 (IndicSUPERB) to 0.504, and performance rose from 0.387 to 0.504, surpassing the best-performing Marathi ASR baseline. This demonstrates the effectiveness of transliteration for multilingual KWS.</i></p>
+
+  <pre xml:space="preserve" style="display: none;">@inproceedings{kiran_inter25,
+    Author = {R,Kiran.
+    and Kurmi, Vinod K
+    and Namboodiri, Vinay P
+    and Jawhar, CV},
+    Title = {Multilingual Query
+    -by-Example KWS using 
+    Transliteration},
+    Booktitle = {InterSpeech},
+    Year   = {2025}
+    }
+</pre>
+    </div>
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- StarttPaper one -->
@@ -1490,7 +1535,7 @@ year = {2019}
   <tbody><tr><td>
     <sectionheading>&nbsp;&nbsp;Selected Awards</sectionheading>
     <ul>
-        <li>   <strong>  Outstandng PhD Thesis Award </strong> (2021).</li>
+        <li>   <strong>  Outstanding PhD Thesis Award </strong> (2021).</li>
     <li>   <strong>  <a href="https://www.daad.de/en/the-daad/postdocnet/fellows/fellows/#Kurmi
 "> AI Post-Doc Net Fellow</a> </strong> (2020-2021).</li>
     <li> <strong>TCS Research Fellowship </strong> (2016-2019).</li>
@@ -1517,6 +1562,10 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('interspeech25_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('wacv25inc_abs');
 </script>
