@@ -211,8 +211,9 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
-    
-     <li> Paper accepted in <a href="https://www.interspeech2025.org/home" >Interspeech-2025 </a></li>
+
+     <li> Paper on "Change Detection" is accepted in <a href="https://www.iros25.org/" >IROS-2025 </a></li>
+     <li> Paper is accepted in <a href="https://www.interspeech2025.org/home" >Interspeech-2025 </a></li>
       <li> Invited for a discussion on <a href=" ./vinod_files/air.jpeg" >"AI and our Future"</a>  at <a href=" https://www.newsonair.gov.in/regional-units/bhopal/" >Akashvani, Bhopal .</a></li>
          <li> 3 Papers accepted in <a href="https://wacv2025.thecvf.com/" >WACV-25.</a></li>
           <li> Invited talk on 'AI on Radiantion Oncology' at ICRO Proadvance 2024 in PGIMER Chandigarh. </a></li>
@@ -292,17 +293,73 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 
 <!-- StarttPaper one -->
 <tr>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iros25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+      <td width="67%" valign="top" style="padding-top:10px">
+    <p><a href="https://visdomlab.github.io/" id="iros25_id">
+       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+<heading>Spectral-Temporal Attention for Robust Change Detection</heading></a><br>
+Mayank Thakur, Radhe Shyam Sharma, <strong>Vinod K Kurmi</strong>, Raj Samant, Badri N Patro<br>
+<em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS),</em> 2025, Hangzhou, China.
+</p>
+<div class="paper" id="iros25">
+<a href="javascript:toggleblock(&#39;iros25_abs&#39;)">abstract</a> |
+<!-- <a href=" https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2025/MultilingualKWS.pdf">pdf</a> | -->
+<a shape="rect" href="javascript:togglebib(&#39;iros25&#39;)" class="togglebib">bibtex</a> |
+  
+
+  <p align="justify"> <i id="iros25_abs" style="display: none;"> Change detection has been used for various tasks
+    for a long time. With advancements in robotic systems and
+    computer vision, change detection techniques can be further
+    explored for diverse applications. Current state-of-the-art methods primarily use either satellite images or street-level images
+    to detect changes. However, the techniques used for these two
+    types of images differ substantially, though their core objective
+    remains identical. We introduce a spectral-temporal attention network capable
+    of detecting changes in both satellite and street-level images
+    across multiple temporal instances. Additionally, we present
+    an indoor environmental dataset featuring significantly more
+    frequent changes is significantly higher. We analyze the impact
+    of temporal and spatial domain shifts on the performance of
+    various methods and demonstrate that performing attention in
+    the spectral domain not only enhances overall performance but
+    also increases robustness against spatial domain shifts.</i></p>
+
+  <pre xml:space="preserve" style="display: none;">@inproceedings{thakur_iros25,
+    Author = {Thakur,Mayank
+    and Sharma, Radhe Shyam
+    and Kurmi, Vinod K
+    and Samant, Raj
+  and Patro, Badri N},
+    Title = {Spectral-Temporal 
+    Attention for Robust Change
+   Detection},
+    Booktitle = {IROS},
+    Year   = {2025}
+    }
+</pre>
+    </div>
+  </td>
+</tr>
+
+
+
+
+
+
+     
+
+<!-- StarttPaper one -->
+<tr>
   <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/interspeech25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="interspeech25_id">
        <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
 <heading>Multilingual Query-by-Example KWS using Transliteration</heading></a><br>
 Kirandevraj R, <strong>Vinod K Kurmi</strong>, Vinay P Namboodiri, C V Jawahar<br>
-<em>Conference of the International Speech Communication Association (Interspeech) </em> 2025, Rotterdam, The Netherlands.
+<em>Conference of the International Speech Communication Association (Interspeech) </em> 2025, Rotterdam, Netherlands.
 </p>
 <div class="paper" id="interspeech25">
 <a href="javascript:toggleblock(&#39;interspeech25_abs&#39;)">abstract</a> |
-<!-- <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/r22_interspeech.pdf">pdf</a> | -->
+<a href=" https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2025/MultilingualKWS.pdf">pdf</a> |
 <a shape="rect" href="javascript:togglebib(&#39;interspeech25&#39;)" class="togglebib">bibtex</a> |
   
 
@@ -1562,7 +1619,9 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
-
+<script xml:space="preserve" language="JavaScript">
+  hideblock('iros25_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('interspeech25_abs');
   </script>
