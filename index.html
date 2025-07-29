@@ -211,7 +211,8 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
-
+     <li> 2 Papers accepted in <a href="https://bmvc2025.bmva.org/" >BMVC-25.</a></li>
+     <li> Paper on "Multi-Attribute Bias Mitigation " is accepted in <a href="https://ecai2025.org/" >ECAI-2025 </a></li>
           <li> Speaking at <a href="https://cvit.iiit.ac.in/summerschool2025/speakers.php" >CVIT Summer School</a> at IIIT Hyderabad.</a></li>
      <li> Paper on "Change Detection" is accepted in <a href="https://www.iros25.org/" >IROS-2025 </a></li>
      <li> Paper is accepted in <a href="https://www.interspeech2025.org/home" >Interspeech-2025 </a></li>
@@ -290,6 +291,73 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
     <tbody>
+
+
+<!-- StarttPaper one -->
+<tr>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/ecai25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+      <td width="67%" valign="top" style="padding-top:10px">
+    <p><a href="https://visdomlab.github.io/" id="ecai25_id">
+       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+<heading>Multi-Attribute Bias Mitigation via Representation Learning</heading></a><br>
+Rajeev Dwivedi, Ankur Kumar, <strong>Vinod K Kurmi</strong><br>
+<em>The 28th European Conference on Artificial Intelligence (ECAI-2025)</em>, Bologna, Italy.
+</p>
+<div class="paper" id="ecai25">
+<a href="javascript:toggleblock(&#39;ecai25_abs&#39;)">abstract</a> |
+<!-- <a href=" https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2025/MultilingualKWS.pdf">pdf</a> | -->
+<a shape="rect" href="javascript:togglebib(&#39;ecai25&#39;)" class="togglebib">bibtex</a> |
+  
+
+  <p align="justify"> <i id="ecai25_abs" style="display: none;"> Real-world images frequently exhibit multiple overlapping biases,
+    including textures, watermarks, gendered makeup, scene-object pair-
+    ings, etc. These biases collectively impair the performance of modern
+    vision models, undermining both their robustness and fairness. Ad-
+    dressing these biases individually proves inadequate, as mitigating
+    one bias often permits or intensifies others. We tackle this multi-
+    bias problem with Generalized Multi-Bias Mitigation (GMBM), a
+    lean two-stage framework that needs group labels only while train-
+    ing and minimizes bias at test time. First, Adaptive Bias-Integrated
+    Learning (ABIL) deliberately identifies the influence of known short-
+    cuts by training encoders for each attribute and integrating them with
+    the main backbone, compelling the classifier to explicitly recognize
+    these biases. Then Gradient-Suppression Fine-Tuning prunes those
+    very bias directions from the backbone’s gradients, leaving a sin-
+    gle compact network that ignores all the shortcuts it just learned to
+    recognize. Moreover we find that existing bias metrics break under
+    subgroup imbalance and train–test distribution shifts, so we intro-
+    duce Scaled Bias Amplification (SBA): a test-time measure that dis-
+    entangles model-induced bias amplification from distributional dif-
+    ferences. We validate GMBM on FB-CMNIST, CelebA, and COCO,
+    where we boost worst-group accuracy, halve multi-attribute bias am-
+    plification, and set a new low in SBA—even as bias complexity and
+    distribution shifts intensify—making GMBM the first practical, end-
+    to-end multi-bias solution for visual recognition.</i></p>
+
+  <pre xml:space="preserve" style="display: none;">@inproceedings{rajeevr_ecai25,
+    Author = {Dwivedi, Rajeev R
+    and Kumar, Ankur
+    and Kurmi, Vinod},
+    Title = {Multi-Attribute 
+    Bias Mitigation
+    via Representation 
+    Learning},
+    Booktitle = {ECAI},
+    Year   = {2025}
+    }
+</pre>
+    </div>
+  </td>
+</tr>
+
+
+
+
+
+
+
+
+
 
 
 <!-- StarttPaper one -->
@@ -1620,6 +1688,9 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('ecai25_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('iros25_abs');
   </script>
