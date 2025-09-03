@@ -97,19 +97,156 @@ Deadlines
 
 
 
+        <div id="wacv2" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://wacv.thecvf.com/"><b>WACV 2026 Round 2</b></a>
+                  <div class="meta">
+                    March 06 - March 10, 2026 // <a href="http://maps.google.com/?q=Tucson,">Tucson, Arizona</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
       
-
-
+      
+        <div id="icassp" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://2026.ieeeicassp.org/call-for-papers/"><b>ICASSP 2026</b></a>
+                  <div class="meta">
+                    May 04 - May 08, 2026 // <a href="http://maps.google.com/?q=Spain,">Barcelona, Spain</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
  
-      
+        <div id="iclr" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://iclr.cc/"><b>ICLR 2026</b></a>
+                  <div class="meta">
+                    April 23 - April 27, 2026 // <a href="http://maps.google.com/?q=Brazil,">Rio de Janeiro, Brazil
+                    </a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
 
 
+        <div id="aistat" class=" ML-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://virtual.aistats.org/"><b>AISTATS 2026</b></a>
+                  <div class="meta">
+                    May 02 - May 05, 2026 // <a href="http://maps.google.com/?q=Morocco,">Tangier, Morocco</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+
+        <div id="cvpr" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://cvpr.thecvf.com/Conferences/2026"><b>CVPR 2026</b></a>
+                  <div class="meta">
+                    June 06 - June 12, 2026 // <a href="http://maps.google.com/?q=Colorado,">Denver, Colorado, United States</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
+
+
+
+
+
+        <div id="eccv" class=" CV-conf ">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <a href="https://eccv.ecva.net/"><b>ECCV 2026</b></a>
+                  <div class="meta">
+                    Sep 08 - Sep 13, 2026 // <a href="http://maps.google.com/?q=Sweden,">Malmö, Sweden</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <span class="timer"></span>
+                <div class="deadline">
+                  <div>Deadline:
+                    <span class="deadline-time"></span>
+                 </div>
+                </div>
+                <div class="calendar"></div>
+              </div>
+          </div>
+          <hr>
+        </div>
 
         <footer>
           Maintained by <a href="https://vinodkkurmi.github.io/">@vinodkurmi</a>.
         </footer>
         <hr>
     </div>
+
+
+     
+
+
+
+        
+
+
+
+    
     
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
   <tbody><tr><td><br><p align="right"><font size="1.5">
@@ -140,14 +277,6 @@ Deadlines
 
 //         // ------------------------------//---------------------------------//
 
- 
-
-   
-
-
-
-
- 
 
     // ------------------------------//---------------------------------//       
           // adjust date according to deadline timezone
@@ -185,6 +314,236 @@ Deadlines
           var today = moment();
           if (today.diff(confDate) > 0)
             $('#aaai').addClass('past');
+      // ------------------------------//---------------------------------//       
+          // adjust date according to deadline timezone
+          var timezone = "America/Los_Angeles" ;
+          var confDate = moment.tz("2025-09-12 23:59:59", timezone);
+
+          // render countdown timer
+          $('#wacv2 .timer').countdown(confDate.toDate(), function(event) {
+            $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+          });
+          $('#wacv2 .deadline-time').html(confDate.toString());
+
+          // add calendar button
+          var myCalendar = createCalendar({
+            options: {
+              class: 'calendar-obj',
+
+              // You can pass an ID. If you don't, one will be generated for you
+              id: 'wacv2'
+            },
+            data: {
+              // Event title
+              title: 'WACV 2026 deadline',
+
+              // Event start date
+              start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+              // Event duration
+              duration: 60,
+            }
+          });
+          document.querySelector('#wacv2 .calendar').appendChild(myCalendar);
+
+          // check if date has passed, add 'past' class to it
+          var today = moment();
+          if (today.diff(confDate) > 0)
+            $('#wacv2').addClass('past');
+
+
+          // ------------------------------//---------------------------------//       
+        // adjust date according to deadline timezone
+        var timezone = "America/Los_Angeles" ;
+        var confDate = moment.tz("2025-09-17 23:59:59", timezone);
+
+        // render countdown timer
+        $('#icassp .timer').countdown(confDate.toDate(), function(event) {
+          $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+        });
+        $('#icassp .deadline-time').html(confDate.toString());
+
+        // add calendar button
+        var myCalendar = createCalendar({
+          options: {
+            class: 'calendar-obj',
+
+            // You can pass an ID. If you don't, one will be generated for you
+            id: 'icassp'
+          },
+          data: {
+            // Event title
+            title: 'ICASSP 2026 deadline',
+
+            // Event start date
+            start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+            // Event duration
+            duration: 60,
+          }
+        });
+        document.querySelector('#icassp .calendar').appendChild(myCalendar);
+
+        // check if date has passed, add 'past' class to it
+        var today = moment();
+        if (today.diff(confDate) > 0)
+          $('#icassp').addClass('past');
+
+
+
+
+                  // ------------------------------//---------------------------------//       
+        // adjust date according to deadline timezone
+        var timezone = "America/Los_Angeles" ;
+        var confDate = moment.tz("2025-09-19 23:59:59", timezone);
+
+        // render countdown timer
+        $('#iclr .timer').countdown(confDate.toDate(), function(event) {
+          $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+        });
+        $('#iclr .deadline-time').html(confDate.toString());
+
+        // add calendar button
+        var myCalendar = createCalendar({
+          options: {
+            class: 'calendar-obj',
+
+            // You can pass an ID. If you don't, one will be generated for you
+            id: 'iclr'
+          },
+          data: {
+            // Event title
+            title: 'ICLR 2026 deadline',
+
+            // Event start date
+            start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+            // Event duration
+            duration: 60,
+          }
+        });
+        document.querySelector('#iclr .calendar').appendChild(myCalendar);
+
+        // check if date has passed, add 'past' class to it
+        var today = moment();
+        if (today.diff(confDate) > 0)
+          $('#iclr').addClass('past');  
+
+
+                         // ------------------------------//---------------------------------//       
+        // adjust date according to deadline timezone
+        var timezone = "America/Los_Angeles" ;
+        var confDate = moment.tz("2025-09-25 23:59:59", timezone);
+
+        // render countdown timer
+        $('#aistat .timer').countdown(confDate.toDate(), function(event) {
+          $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+        });
+        $('#aistat .deadline-time').html(confDate.toString());
+
+        // add calendar button
+        var myCalendar = createCalendar({
+          options: {
+            class: 'calendar-obj',
+
+            // You can pass an ID. If you don't, one will be generated for you
+            id: 'aistat'
+          },
+          data: {
+            // Event title
+            title: 'AISTATS 2026  deadline',
+
+            // Event start date
+            start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+            // Event duration
+            duration: 60,
+          }
+        });
+        document.querySelector('#aistat .calendar').appendChild(myCalendar);
+
+        // check if date has passed, add 'past' class to it
+        var today = moment();
+        if (today.diff(confDate) > 0)
+          $('#aistat').addClass('past');  
+
+
+
+                                // ------------------------------//---------------------------------//       
+        // adjust date according to deadline timezone
+        var timezone = "America/Los_Angeles" ;
+        var confDate = moment.tz("2025-11-11 23:59:59", timezone);
+
+        // render countdown timer
+        $('#cvpr .timer').countdown(confDate.toDate(), function(event) {
+          $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+        });
+        $('#cvpr .deadline-time').html(confDate.toString());
+
+        // add calendar button
+        var myCalendar = createCalendar({
+          options: {
+            class: 'calendar-obj',
+
+            // You can pass an ID. If you don't, one will be generated for you
+            id: 'cvpr'
+          },
+          data: {
+            // Event title
+            title: 'CVPR 2026  deadline',
+
+            // Event start date
+            start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+            // Event duration
+            duration: 60,
+          }
+        });
+        document.querySelector('#cvpr .calendar').appendChild(myCalendar);
+
+        // check if date has passed, add 'past' class to it
+        var today = moment();
+        if (today.diff(confDate) > 0)
+          $('#cvpr').addClass('past');   
+        
+          
+
+                             // ------------------------------//---------------------------------//       
+        // adjust date according to deadline timezone
+        var timezone = "America/Los_Angeles" ;
+        var confDate = moment.tz("2026-03-06 23:59:59", timezone);
+
+        // render countdown timer
+        $('#eccv .timer').countdown(confDate.toDate(), function(event) {
+          $(this).html(event.strftime('%D days %Hh %Mm %Ss'));
+        });
+        $('#eccv .deadline-time').html(confDate.toString());
+
+        // add calendar button
+        var myCalendar = createCalendar({
+          options: {
+            class: 'calendar-obj',
+
+            // You can pass an ID. If you don't, one will be generated for you
+            id: 'eccv'
+          },
+          data: {
+            // Event title
+            title: 'ECCV 2026  deadline',
+
+            // Event start date
+            start: confDate.toDate(), // new Date('August 15, 2013 19:00'),
+
+            // Event duration
+            duration: 60,
+          }
+        });
+        document.querySelector('#eccv .calendar').appendChild(myCalendar);
+
+        // check if date has passed, add 'past' class to it
+        var today = moment();
+        if (today.diff(confDate) > 0)
+          $('#eccv').addClass('past');  
 
 
   // Set checkboxes
