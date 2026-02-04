@@ -53,6 +53,9 @@
       border-width: 1px;
       border-color: Black;
   }
+  span.highlight {
+  background-color: #ffffd0;
+  }
   </style>
 <!--   <link rel="shortcut icon" href="https://www.cs.cmu.edu/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon">
  -->
@@ -146,7 +149,7 @@
         <li> Uncertainty in deep learning (Bayesian models).</li>
          <li>Data generative models (GANs, VAEs, and Diffusion models).</li>
         <li> Medical image processing.</li>
-         <li>3D reconstructions, augmented reality (AR), and virtual reality (VR).</li>
+         <!-- <li>3D reconstructions, augmented reality (AR), and virtual reality (VR).</li> -->
           <li>Speech and audio analysis.</li>
       </ul>
       For more details please visit the <a href="https://vinodkkurmi.github.io/dcl">Visual Data Computing Group (VisDom)</a>.
@@ -163,7 +166,7 @@
             </div> -->
 
   
-We are seeking motivated researchers who are passionate about computer vision, machine learning, and deep learning. If you are interested, please send us your CV and highlight your areas of interest and experience to <a style="color:red;">visdomdse@gmail.com</a>.
+We are seeking motivated researchers who are passionate about computer vision, machine learning, and deep learning. If you are interested, please send us your CV and highlight your areas of interest and experience to <span class="highlight"><a style="color:red;">visdomdse@gmail.com</a></span>.
 <!-- <blink> Current Opening for JRF/Project associates:  </blink> -->
 <!--  <marquee direction="right"
              behavior="alternate"
@@ -211,8 +214,10 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
+     <li> Paper on "Bias Mitigation" is accepted in <a href="https://iclr.cc/" >ICLR-2026 </a></li>
+     <li> Invited for a technical talk at "Rashtriya Bal Vaigyanik Pradarshani (RBVP) 2025" at REI Bhopal. <!-- https://www.youtube.com/live/Wc1GIlLLUwY -->
      <li> Paper on "NIR Image Colorization" is accepted in <a href="https://wacv.thecvf.com/" >WACV-2026 </a></li>
-     <li> 2 Papers accepted in <a href="https://bmvc2025.bmva.org/" >BMVC-25.</a></li>
+     <li> 2 papers accepted in <a href="https://bmvc2025.bmva.org/" >BMVC-25.</a></li>
      <li> Paper on "Multi-Attribute Bias Mitigation " is accepted in <a href="https://ecai2025.org/" >ECAI-2025 </a></li>
           <li> Speaking at <a href="https://cvit.iiit.ac.in/summerschool2025/speakers.php" >CVIT Summer School</a> at IIIT Hyderabad.</a></li>
      <li> Paper on "Change Detection" is accepted in <a href="https://www.iros25.org/" >IROS-2025 </a></li>
@@ -291,6 +296,58 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 </tbody></table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
+
+  <tbody>
+    <!-- StarttPaper one -->
+    <tbody><tr bgcolor="#ffffd0">
+      <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iclr26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+          <td width="67%" valign="top" style="padding-top:10px">
+        <p><a href="https://visdomlab.github.io/" id="iclr26_id">
+           <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+    <heading>Regulating Internal Evidence Flows for Robust Learning Under Spurious Correlations </heading></a><br>
+      Rajeev Ranjan Dwivedi, Mohammedkaif Mohammedrafiq Kalagond, Niramay M.Patel, <strong>Vinod K Kurmi</strong><br>
+    <em>International Conference on Learning Representations 
+      (ICLR-2026)</em>, Rio de Janeiro, Brazil.
+    </p>
+    <div class="paper" id="iclr26">
+    <a href="javascript:toggleblock(&#39;iclr26_abs&#39;)">abstract</a> |
+    <!-- <a href="https://rajeev-dw9.github.io/HAQAGen/">webpage</a> | -->
+          <!-- <a href="https://arxiv.org/abs/2601.01103">ArXiv</a> | -->
+            <a href="https://openreview.net/pdf?id=L2L1hi0FGj">paper</a> |
+          <!-- <a href="https://github.com/Parinitanema/FACL">code</a> | -->
+    <a shape="rect" href="javascript:togglebib(&#39;iclr26&#39;)" class="togglebib">bibtex</a> |
+      
+    
+      <p align="justify"> <i id="iclr26_abs" style="display: none;"> Deep models often exploit spurious correlations (e.g., backgrounds or dataset artifacts), hurting worst-group performance. We propose \textbf{Evidence-Gated Suppression (EGS)}, a lightweight, plug-in regularizer that intervenes inside the network during training. EGS tracks a class-conditional, confidence-weighted contribution for each neuron (more negative 
+        stronger support) and applies a percentile-based, multiplicative decay to the most extreme contributors, reducing overconfident shortcut pathways while leaving other features relatively more influential. EGS integrates with standard ERM, requires no group labels, and adds 
+        training overhead. We provide analysis linking EGS to minority-margin gains, path-norm-like capacity control, and stability benefits via EMA-smoothed gating. Empirically, EGS improves worst-group accuracy and calibration vs.\ ERM and is competitive with state-of-the-art methods across spurious-correlation benchmarks (e.g., Waterbirds, CelebA, BAR, COCO), while maintaining strong average accuracy. These results suggest that regulating internal evidence flow is a simple and scalable route to robustness without group labels.</i></p>
+    
+      <pre xml:space="preserve" style="display: none;">@inproceedings{rajeev_iclr26,
+        Author = {Dwivedi, Rajeev R,
+        and Kalagond, Mohammedkaif,
+        and M.Patel, Niramay
+        and Kurmi, Vinod},
+        Title = {Regulating Internal Evidence
+          Flows for Robust Learning Under Spurious
+          Correlations/heading},
+        Booktitle = {ICLR},
+        Year   = {2026}
+        }
+    </pre>
+        </div>
+      </td>
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
     <tbody>
 <!-- StarttPaper one -->
 <tr>
@@ -305,8 +362,8 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 </p>
 <div class="paper" id="wacv26">
 <a href="javascript:toggleblock(&#39;wacv26_abs&#39;)">abstract</a> |
-<!-- <a href="https://visdomlab.github.io/GCL/">webpage</a> | -->
-      <!-- <a href="https://arxiv.org/abs/2501.09361">ArXiv</a> | -->
+<a href="https://rajeev-dw9.github.io/HAQAGen/">webpage</a> |
+      <a href="https://arxiv.org/abs/2601.01103">ArXiv</a> |
       <!-- <a href="https://github.com/Parinitanema/FACL">code</a> | -->
 <a shape="rect" href="javascript:togglebib(&#39;wacv26&#39;)" class="togglebib">bibtex</a> |
   
@@ -336,7 +393,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
   <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/bmvc25_2.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="bmvc25_2_id">
-       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+       <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
 <heading>Grad-CL: Source Free Domain Adaptation with Gradient Guided Feature Disalignment</heading></a><br>
 Rini Smita Thakur, Rajeev Ranjan Dwivedi, <strong>Vinod K Kurmi</strong><br>
 <em>The 36th British Machine Vision Conference (BMVC-2025)</em>,Sheffield, UK.
@@ -374,7 +431,7 @@ Rini Smita Thakur, Rajeev Ranjan Dwivedi, <strong>Vinod K Kurmi</strong><br>
   <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/bmvc25_1.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="bmvc25_1_id">
-       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+       <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
 <heading>CLFSeg: A Fuzzy-Logic based Solution for Boundary Clarity and Uncertainty Reduction in Medical Image Segmentation</heading></a><br>
 Anshul Kaushal, Kunal Jangid, <strong>Vinod K Kurmi</strong><br>
 <em>The 36th British Machine Vision Conference (BMVC-2025)</em>,Sheffield, UK.
@@ -417,7 +474,7 @@ Anshul Kaushal, Kunal Jangid, <strong>Vinod K Kurmi</strong><br>
        <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
 <heading>Multi-Attribute Bias Mitigation via Representation Learning</heading></a><br>
 Rajeev Dwivedi, Ankur Kumar, <strong>Vinod K Kurmi</strong><br>
-<em>The 28th European Conference on Artificial Intelligence (ECAI-2025)</em>, Bologna, Italy.
+<em>The 28th European Conference on Artificial Intelligence (<strong>ECAI-2025</strong>)</em>, Bologna, Italy.
 </p>
 <div class="paper" id="ecai25">
 <a href="javascript:toggleblock(&#39;ecai25_abs&#39;)">abstract</a> |
@@ -479,7 +536,7 @@ Rajeev Dwivedi, Ankur Kumar, <strong>Vinod K Kurmi</strong><br>
 
 <!-- StarttPaper one -->
 <tr>
-  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iros25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iros25_n.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="iros25_id">
        <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
@@ -535,7 +592,7 @@ Mayank Thakur, Radhe Shyam Sharma, <strong>Vinod K Kurmi</strong>, Raj Samant, B
 
 <!-- StarttPaper one -->
 <tr>
-  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/interspeech25.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/interspeech25_n.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="interspeech25_id">
        <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
@@ -925,7 +982,7 @@ Year   = {2022}
 
 
 <!-- StarttPaper one -->
-   <tr>
+<tbody><tr bgcolor="#ffffd0">
     <td width="33%" valign="top" align="center" style="padding-top:10px"><a href="https://vinodkkurmi.github.io/"><img src="./vinod_files/aaai22.gif" alt="sym" width="110%" style="padding:10px;border-radius:15px;border:0px solid black"></a></td>
         <td width="67%" valign="top" style="padding-top:10px">
       <p><a href="https://vinodkkurmi.github.io/" id="aaai22_id">
@@ -1565,7 +1622,7 @@ year = {2019}
 
 
 
-<tr>
+  <tbody><tr bgcolor="#ffffd0">
     <td width="33%" valign="top" align="center"><a href="https://delta-lab-iitk.github.io/CADA/"><img src="./vinod_files/cvpr19.png" alt="sym" width="100%" style="border-radius:15px"></a>
     </td><td width="67%" valign="top">
       <p><a href="https://delta-lab-iitk.github.io/CADA/" id="CVPR19">
@@ -1605,7 +1662,7 @@ year = {2019}
 
 
 
-<tr>
+  <tbody><tr bgcolor="#ffffd0">
     <td width="33%" valign="top" align="center"><a href="https://badripatro.github.io/MDN-VQG/"><img src="./vinod_files/emnlp18.png" alt="sym" width="100%" style="border-style: none"></a>
     </td><td width="67%" valign="top">
       <p><a href="https://badripatro.github.io/MDN-VQG/" id="MDN-VQG">
@@ -1818,6 +1875,9 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('iclr26_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('wacv26_abs');
   </script>
