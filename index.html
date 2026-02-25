@@ -214,6 +214,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
+     <li> Paper  accepted at  <a href="https://cvpr.thecvf.com/" >CVPR-2026 </a></li>
      <li> Paper on "Bias Mitigation" is accepted in <a href="https://iclr.cc/" >ICLR-2026 </a></li>
      <li> Invited for a technical talk at "Rashtriya Bal Vaigyanik Pradarshani (RBVP) 2025" at REI Bhopal. <!-- https://www.youtube.com/live/Wc1GIlLLUwY -->
      <li> Paper on "NIR Image Colorization" is accepted in <a href="https://wacv.thecvf.com/" >WACV-2026 </a></li>
@@ -299,6 +300,47 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 
   <tbody>
     <!-- StarttPaper one -->
+    <tbody><tr bgcolor="#f0ffff">
+      <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/cvpr26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+          <td width="67%" valign="top" style="padding-top:10px">
+        <p><a href="https://visdomlab.github.io/" id="cvpr26_id">
+           <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+    <heading>Rank-Guided Pseudo-Bias Learning for Robust Black-Box Adaptation </heading></a><br>
+    Rajeev Ranjan Dwivedi, Anshuman Dangwal, <strong>Vinod K Kurmi</strong><br>
+    <em>Conference on Computer Vision and Pattern Recognition 2026
+      (CVPR-2026)</em>,  Denver, Colorado, USA.
+    </p>
+    <div class="paper" id="cvpr26">
+    <a href="javascript:toggleblock(&#39;cvpr26_abs&#39;)">abstract</a> |
+    <!-- <a href="https://rajeev-dw9.github.io/HAQAGen/">webpage</a> | -->
+          <!-- <a href="https://arxiv.org/abs/2601.01103">ArXiv</a> | -->
+            <!-- <a href="https://openreview.net/pdf?id=L2L1hi0FGj">paper</a> | -->
+          <!-- <a href="https://github.com/Parinitanema/FACL">code</a> | -->
+    <a shape="rect" href="javascript:togglebib(&#39;cvpr26&#39;)" class="togglebib">bibtex</a> |
+      
+    
+      <p align="justify"> <i id="cvpr26_abs" style="display: none;"> Pretrained vision encoders are widely used as frozen, black-box feature extractors, yet they often inherit spurious correlations that disproportionately harm underrepresented groups. We introduce \textbf{PLD-Debias}, a fully black-box debiasing framework that requires neither access to backbone parameters nor demographic annotations. Our method integrates three components: (1) Rank-Regularized Amplification, a lightweight adapter that exaggerates latent spurious directions; (2) Unsupervised Pseudo-Bias Induction, which clusters amplified features to infer high-fidelity proxy bias labels; and (3) \emph{Bias-Guided Refinement}, combining supervised contrastive alignment with cluster-aware adaptive margins to purify representations and equalize decision boundaries. We theoretically show that these components jointly tighten a worst-group risk bound under spurious correlations. Empirically, PLD-Debias achieves state-of-the-art worst-group accuracy across CelebA, Waterbirds, and CMNIST, improving performance by 3--5 points over prior black-box methods while maintaining average accuracy. Remarkably, our pseudo-bias labels align with ground-truth bias annotations at over 90% fidelity, enabling oracle-level robustness without demographic supervision. Our results demonstrate that fairness and utility can be achieved through a plug-and-play classifier adapter for any frozen foundation model.
+      <pre xml:space="preserve" style="display: none;">@inproceedings{rajeev_cvpr26,
+        Author = {Dwivedi, Rajeev R,
+        and Dangwal, Anshuman,
+        and Kurmi, Vinod},
+        Title = {Rank-Guided Pseudo-Bias
+          Learning for Robust Black-Box 
+          Adaptation },
+        Booktitle = {CVPR},
+        Year   = {2026}
+        }
+    </pre>
+        </div>
+      </td>
+    </tr>
+
+
+
+
+
+  <tbody>
+    <!-- StarttPaper one -->
     <tbody><tr bgcolor="#ffffd0">
       <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iclr26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
           <td width="67%" valign="top" style="padding-top:10px">
@@ -354,7 +396,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
   <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/wacv26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="wacv26_id">
-       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+       <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
 <heading>Histogram Assisted Quality Aware Generative Model for Resolution Invariant
   NIR Image Colorization</heading></a><br>
   Abhinav, Rajeev Ranjan Dwivedi, Samiran Das, <strong>Vinod K Kurmi</strong><br>
@@ -1875,6 +1917,9 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('cvpr26_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('iclr26_abs');
   </script>
