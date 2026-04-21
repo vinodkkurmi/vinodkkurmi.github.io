@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Media </title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* 2-column layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Mobile view (1 column) */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background: #007BFF;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .card-content a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Research in Print Media</h1>
+
+<div class="container">
+
+    <div class="card">
+        <img src="./news_img/cl.jpg" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>CVPR 2026 Paper</h3> -->
+            <!-- <p>Rank-Guided Pseudo-Bias Learning accepted at CVPR 2026.</p> -->
+            <!-- <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./news_img/gbm.jpg" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>ICLR 2026 Paper</h3> -->
+            <!-- <p>Black-box adaptation research accepted at ICLR 2026.</p> -->
+            <!-- <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./news_img/remote.jpg" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>New Submission</h3>
+            <p>Work submitted to ICML and MICCAI.</p>
+            <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./news_img/remote2.jpg" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>Lab Update</h3>
+            <p>Recent achievements from VisDom Lab.</p>
+            <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+	<div class="card">
+        <img src="./news_img/tumor.png" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>Lab Update</h3>
+            <p>Recent achievements from VisDom Lab.</p>
+            <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+	<div class="card">
+        <img src="./news_img/voice.jpg" alt="Article Image">
+        <div class="card-content">
+            <!-- <h3>Lab Update</h3>
+            <p>Recent achievements from VisDom Lab.</p>
+            <a href="#">Read More</a> -->
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
