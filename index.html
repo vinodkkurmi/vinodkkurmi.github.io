@@ -217,6 +217,7 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     
      <!-- <heading>&nbsp;&nbsp;News</heading> -->
+      <li> Paper  accepted at  <a href="https://conferences.miccai.org/2026/en/" >MICCAI-2026 </a></li>
      <li> Invited talk at Workshop on  "Recent Trends and Advances in Computer Vision Research" at IIT Bombay </a></li>
      <li> Paper  accepted at  <a href="https://cvpr.thecvf.com/" >CVPR-2026 </a></li>
      <li> Paper on "Bias Mitigation" is accepted in <a href="https://iclr.cc/" >ICLR-2026 </a></li>
@@ -352,6 +353,62 @@ Useful links: <a href="https://www.iiserb.ac.in/doaa/internship/">[IISER Bhopal 
 
   <!-- StarttPaper one -->
 <tr>
+  <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/miccai_1_2026.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
+      <td width="67%" valign="top" style="padding-top:10px">
+    <p><a href="https://visdomlab.github.io/" id="miccai1_26_id">
+       <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+<heading>ReLiF-3D: Prior-Guided Semi-Supervised 3D MRI Segmentation via Robust Bias-Consistent Paired Views</heading></a><br>
+Kunal Jangid, Tanmay Basu, <strong>Vinod K Kurmi</strong><br>
+<em> 29th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI) </em> 2026, Strasbourg, France.
+</p>
+<div class="paper" id="miccai1_26">
+<a href="javascript:toggleblock(&#39;miccai_1_2026_abs&#39;)">abstract</a> |
+<a href=" https://visdomlab.github.io/ReLiF_3D/">webpage</a> |
+<a shape="rect" href="javascript:togglebib(&#39;miccai1_26&#39;)" class="togglebib">bibtex</a> |
+  
+
+  <p align="justify"> <i id="miccai_1_2026_abs" style="display: none;"> Foundation models provide strong anatomical priors that
+can improve semi-supervised 3D MRI segmentation under limited anno-
+tation. However, many approaches still rely on unstable teacher-student
+updates and heuristic pseudo-labeling, which can accumulate errors when
+learning from unlabeled volumes. In MRI, scanner-dependent intensity
+inhomogeneity and distribution shifts further degrade robustness, es-
+pecially in extreme low-label regimes with heterogeneous lesions. We
+propose ReLiF-3D, a foundation-guided semi-supervised framework that
+trains a lightweight 3D U-Net under supervision from a frozen volumetric
+foundation model (SAM-Med3D) prior, avoiding EMA teacher drift while
+retaining a stable spatial guide. Our main contribution is the Smooth Or-
+thogonal Bias Field (SOBF), a paired-view generator that simulates re-
+alistic MRI bias through orthogonal multiplicative and additive smooth
+fields with a progressive strength schedule, producing anatomically con-
+sistent yet scanner-shifted views for reliable consistency learning. To sta-
+bilize unlabeled optimization, ReLiF-3D applies confidence-gated voxel
+co-regularization to enforce consistency only on reliable agreements and
+lesion-aware representation alignment guided by the SAM-Med3D prior.
+Experiments on public BraTS and Left Atrium datasets with 1-5 labeled
+volumes demonstrate significant improvements in overlap and boundary
+metrics over SAM-assisted SSL baselines and state-of-the-art methods.</i></p>
+
+  <pre xml:space="preserve" style="display: none;">@inproceedings{jangid2026relif3d,
+    Author = {Jangid, Kunal
+      and Basu, Tanmay and 
+      Kurmi, Vinod},
+    Title = {ReLiF-3D: Prior-Guided 
+      Semi-Supervised 3D MRI Segmentation
+      via Robust Bias-Consistent Paired Views},
+    Booktitle = {MICCAI},
+    Year   = {2026}
+    }
+</pre>
+    </div>
+  </td>
+</tr>
+
+
+
+
+  <!-- StarttPaper one -->
+<tr>
   <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/icpr26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
       <td width="67%" valign="top" style="padding-top:10px">
     <p><a href="https://visdomlab.github.io/" id="icpr26_id">
@@ -443,7 +500,7 @@ Kirandevraj R, <strong>Vinod K Kurmi</strong>, Vinay P Namboodiri, C V Jawahar<b
       <td width="33%" valign="top" align="center" style="padding-top:0px"><a href="https://visdomlab.github.io/"><img src="./vinod_files/iclr26.png" alt="sym" width="100%" style="padding:0px;border-radius:15px;border:0px solid black"></a></td>
           <td width="67%" valign="top" style="padding-top:10px">
         <p><a href="https://visdomlab.github.io/" id="iclr26_id">
-           <img src="./vinod_files/new.png"  width="6%" style="border-style: none">
+           <!-- <img src="./vinod_files/new.png"  width="6%" style="border-style: none"> -->
     <heading>Regulating Internal Evidence Flows for Robust Learning Under Spurious Correlations </heading></a><br>
       Rajeev Ranjan Dwivedi, Mohammedkaif Mohammedrafiq Kalagond, Niramay M.Patel, <strong>Vinod K Kurmi</strong><br>
     <em>International Conference on Learning Representations 
@@ -2092,6 +2149,9 @@ year = {2019}
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
 </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('miccai_1_2026_abs');
+  </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('icpr26_abs');
   </script>
