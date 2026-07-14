@@ -3,40 +3,42 @@ const servers = {
     "GPU cards":[
         {mem:"141GB",users:["Tanmay"]},
         {mem:"141GB",users:["Akshay"]},
-        {mem:"141GB",users:["Akash"]}
+        {mem:"141GB",users:["Akash"]},
     ],
     
-    "Cluster 1":[
+    "Prakriti":[
         {mem:"141GB",users:["Tanmay"]},
+        {mem:"141GB",users:["Akash"]},
+        {mem:"141GB",users:["Akash","Tanmay"]},
         {mem:"141GB",users:["Vivek"]},
         {mem:"141GB",users:["Vivek"]},
+        {mem:"141GB",users:["Vivek","Pratibha"]},
+        {mem:"141GB",users:["Pratibha"]},
+        {mem:"141GB",users:["Pratibha"]},
+    ],
+    
+    "Sankhya":[
+        
+        {mem:"141GB",users:["Vinod"]},
+        {mem:"141GB",users:["Vinod","Akshay"]},
+        {mem:"141GB",users:["Vinod","Akshay"]},
+        {mem:"141GB",users:["Vaibhav","Samiran"]},
+        {mem:"141GB",users:["Vaibhav"]},
         {mem:"141GB",users:["Samiran"]},
         {mem:"141GB",users:["Samiran"]},
         {mem:"141GB",users:["Sundaram"]},
-        {mem:"141GB",users:["Pratibha"]},
-        {mem:"141GB",users:["Pratibha"]}
-    ],
-    
-    "Cluster 2":[
-        {mem:"141GB",users:["Akash"]},
-        {mem:"141GB",users:["Vinod"]},
-        {mem:"141GB",users:["Vaibhav"]},
-        {mem:"141GB",users:["Vinod","Akshay"]},
-        {mem:"141GB",users:["Vaibhav","Samiran"]},
-        {mem:"141GB",users:["Akash","Tanmay"]},
-        {mem:"141GB",users:["Sundaram","Pratibha"]},
-        {mem:"141GB",users:["Vinod","Akshay"]}
-    ],
-    
-    "Anusandhan":[
-        {mem:"80GB",users:["Sundaram"]},
-        {mem:"80GB",users:["Sundaram"]}
     ],
     
     "Pragyan":[
+        {mem:"80GB",users:["Sundaram"]},
+        {mem:"80GB",users:["Sundaram"]},
+        {mem:"40GB",users:["Sundaram"]},
+    ],
+    
+    "Anusandhan":[
         {mem:"80GB",users:["Vaibhav"]},
         {mem:"80GB",users:["Vaibhav"]},
-        {mem:"40GB",users:["Vaibhav"]}
+       
     ],
     
     "Medha":[
