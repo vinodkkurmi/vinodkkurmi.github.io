@@ -50,6 +50,16 @@ const groups = [
         allocations: [
             { name: "Rajeev", mem: "16GB", color: "#e7dcf2" }
         ]
+    },
+
+    {
+        server: "Sankhya (dse4 user)",
+        allocations: [
+            { name: "Harsh", mem: "35GB", color: "#e7ddd2" },
+            { name: "Manjul", mem: "35GB", color: "#e7cccf2" },
+            { name: "Shrey", mem: "35GB", color: "#e7fff2" },
+            { name: "Ayush", mem: "35GB", color: "#b00030" }
+        ]
     }
     
     ];
