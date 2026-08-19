@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Updates | Lab</title>
+<style>
+:root{
+  --bg:#f6f8fc; --card:#fff; --text:#172033; --muted:#667085;
+  --line:#e5e9f2; --accent:#315efb; --accent2:#eef2ff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,#3f464d,#6b737c);color:white;padding:42px 6%;text-align:center}
+header h1{margin:0 0 8px;font-size:34px}
+header p{margin:0;opacity:.88;font-size:16px}
+.container{max-width:1200px;margin:34px auto;padding:0 22px}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+input,select{border:1px solid var(--line);background:white;border-radius:10px;padding:12px 14px;font-size:15px;outline:none}
+input{flex:1;min-width:240px}
+.section{margin:34px 0}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}
+.section-title h2{margin:0;font-size:22px}
+.badge{background:var(--accent2);color:var(--accent);padding:5px 10px;border-radius:20px;font-size:13px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:20px;box-shadow:0 4px 14px rgba(20,30,60,.04);transition:.2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(20,30,60,.09)}
+.avatar{width:46px;height:46px;border-radius:50%;background:var(--accent2);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;margin-bottom:14px}
+.name{font-weight:700;font-size:17px;margin-bottom:5px}
+.degree{font-size:13px;color:var(--muted);margin-bottom:15px}
+.topic{font-size:14px;color:#344054;min-height:40px;margin-bottom:17px}
+.button{display:inline-block;text-decoration:none;background:var(--accent);color:#fff;padding:9px 13px;border-radius:8px;font-size:13px;font-weight:600}
+.button:hover{background:#454c54}
+footer{text-align:center;color:var(--muted);padding:30px;font-size:13px}
+.empty{display:none;text-align:center;color:var(--muted);padding:30px}
+@media(max-width:600px){header h1{font-size:27px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Research Updates from VisDOM Lab</h1>
+  <p>Individual research updates from all lab members</p>
+</header>
+
+<div class="container">
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search student or research topic...">
+    <select id="filter">
+      <option value="all">All Students</option>
+      <option value="BS">BS Students</option>
+      <option value="MS">MS Students</option>
+      <option value="Intern">Interns</option>
+    </select>
+  </div>
+
+  <div id="sections"></div>
+  <div id="empty" class="empty">No matching student found.</div>
+</div>
+
+<footer>Research Update Repository • Update the document links in this HTML file</footer>
+
+<script>
+const students = {
+  BS: [
+    {name:"Aditya Pandey", topic:"Yet to decide", link:"https://docs.google.com/document/d/1irDRCr9DSYfT1ygyOpx3NrYnRlxT28IlPjiCz40hnRQ/edit?usp=drive_link"},
+    {name:"Anay Singh", topic:"Yet to decide", link:"https://docs.google.com/document/d/1Qb96aVEto_9km7CmpQn55Xl1QSpWpQCp6LRsMCcXF2A/edit?usp=drive_link"},
+    {name:"Lokesh Pareek", topic:"Yet to decide", link:"https://docs.google.com/document/d/1eGmXvEz9sdet5zXI52KaBofvPxaWvVb56HRj0GDPKtc/edit?usp=drive_link"},
+    {name:"Mohammedkaif Mohammedrafiq Kalagond", topic:"Yet to decide", link:"https://docs.google.com/document/d/1Z3rpQXZBx35AnjIrXqSHgM4yW8L8qLvEK8uOQNQf1es/edit?usp=drive_link"},
+    {name:"Pranay Meshram", topic:"Yet to decide", link:"https://docs.google.com/document/d/1YVGEnVAUCe9cvEtm2TI2I65UalA993ODMX2sTxLDWKM/edit?usp=drive_link"},
+    {name:"Rachit Bakshi", topic:"Yet to decide", link:"https://docs.google.com/document/d/1Ln8lK_YfB2lR-6-nJ7u-G4aTdl7uJK3YyuxcWTWWTsA/edit?usp=drive_link"},
+    {name:"Saurav Suman", topic:"Yet to decide", link:"https://docs.google.com/document/d/1bk4k1wtoPRHr-oEPk7bZlFm6IcT0G92RfIi2aCTwPx4/edit?usp=drive_link"},
+    {name:"Sumer Singh", topic:"Yet to decide", link:"https://docs.google.com/document/d/15mprWlqBaFLtwbK_vMLimRsFKGjtcdPNN17kTDh1ooY/edit?usp=drive_link"},
+    {name:"Tanushree Ravindra Pratap Yadav", topic:"Yet to decide", link:"https://docs.google.com/document/d/1oXd3bXqFVfLuXJ844lUmPm9Ko4Oe67-3sf8slKrAPAw/edit?usp=drive_link"},
+    {name:"VANSHIKA GUPTA", topic:"Yet to decide", link:"https://docs.google.com/document/d/1Op4KcDMM2bIOYATMb-UJRgut6vJq5HaNemRwt8reQsU/edit?usp=drive_link"}
+  ],
+  MS: [
+    {name:"Harsh Shukla", topic:"Catastrophic Forgetting in Acoustic Sound Localization", link:"https://docs.google.com/document/d/1T-X8ud3F5pKoGcP87gzC8FVqbVFH9_GXilkMZBRwlbw/edit?usp=share_link"},
+    {name:"Manjul Chaturvedi", topic:"Chain of Thought Training in  Vision Language Model", link:"https://docs.google.com/document/d/1MEdn8cuoJLvhG-j1o_9ehDEhFByP7xTiR_ZF_d95S10/edit?usp=sharing"},
+    {name:"Shrey Srivastava", topic:"Reasoning in CoTs", link:"https://docs.google.com/document/d/1bRJdW9DHO7cOupOi-DxWwdHSh4ZIc0I6N2wfAVbJg_s/edit?usp=sharing"}
+  ],
+  Intern: [
+    // {name:"Ashish Shukla", topic:"Yet to decide", link:"#"}
+    // {name:"Intern 02", topic:"Yet to decide", link:"#"},
+    // {name:"Intern 03", topic:"Yet to decide", link:"#"}
+  ]
+};
+
+const labels = {BS:"BS Students", MS:"MS Students", Intern:"Interns"};
+
+function initials(name){
+  return name.split(" ").map(x=>x[0]).slice(0,2).join("").toUpperCase();
+}
+
+function render(){
+  const q=document.getElementById("search").value.toLowerCase().trim();
+  const f=document.getElementById("filter").value;
+  const root=document.getElementById("sections");
+  root.innerHTML="";
+  let total=0;
+
+  Object.keys(students).forEach(group=>{
+    if(f!=="all" && f!==group) return;
+
+    const matches=students[group].filter(s =>
+      s.name.toLowerCase().includes(q) || s.topic.toLowerCase().includes(q)
+    );
+    if(!matches.length) return;
+
+    total += matches.length;
+    const section=document.createElement("section");
+    section.className="section";
+    section.innerHTML=`
+      <div class="section-title">
+        <h2>${labels[group]}</h2>
+        <span class="badge">${matches.length} ${matches.length===1?"student":"students"}</span>
+      </div>
+      <div class="grid">
+        ${matches.map(s=>`
+          <div class="card">
+            <div class="avatar">${initials(s.name)}</div>
+            <div class="name">${s.name}</div>
+            <div class="degree">${group==="BS"?"Bachelor's Student":group==="MS"?"BS-MS Dual Degree Student":"Research Intern"}</div>
+            <div class="topic">${s.topic}</div>
+            <a class="button" href="${s.link}" target="_blank" rel="noopener">Open Research Update ↗</a>
+          </div>
+        `).join("")}
+      </div>`;
+    root.appendChild(section);
+  });
+
+  document.getElementById("empty").style.display=total ? "none" : "block";
+}
+
+document.getElementById("search").addEventListener("input",render);
+document.getElementById("filter").addEventListener("change",render);
+render();
+</script>
+</body>
+</html>
