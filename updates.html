@@ -95,7 +95,7 @@ const students = {
   ]
 };
 
-const labels = {BS:"BS Students", MS:"MS Students", Intern:"Interns"};
+const labels = {BS:"BS Students", MS:"MS Students",  Phds:"PhD Research Scholors",Intern:"Interns"};
 
 function initials(name){
   return name.split(" ").map(x=>x[0]).slice(0,2).join("").toUpperCase();
@@ -129,7 +129,7 @@ function render(){
           <div class="card">
             <div class="avatar">${initials(s.name)}</div>
             <div class="name">${s.name}</div>
-            <div class="degree">${group==="BS"?"Bachelor's Student":group==="MS"?"BS-MS Dual Degree Student":"Research Intern"}</div>
+            <div class="degree">${group==="BS"?"Bachelor's Student":group==="MS"?"BS-MS Dual Degree Student":group==="Phds"?"PhD Research Scholors":"Research Intern"}</div>
             <div class="topic">${s.topic}</div>
             <a class="button" href="${s.link}" target="_blank" rel="noopener">Open Research Update ↗</a>
           </div>
