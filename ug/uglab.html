@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UG Lab System Allocation </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">CR</div>
+      <div>
+        <h1>UG Lab System Allocation </h1>
+        <p>Course-wise systems and seating arrangement</p>
+      </div>
+    </div>
+    <div class="source-badge">Source: Excel arrangement</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">ROOM OVERVIEW</span>
+        <h2>Select a course to view its allocated systems</h2>
+        <p>Choose a course below. The dashboard updates the system count, and arrangement automatically.</p>
+      </div>
+      <div class="course-selector">
+        <label for="courseSelect">Course</label>
+        <select id="courseSelect" aria-label="Select course"></select>
+      </div>
+    </section>
+
+    <section class="course-tabs" id="courseTabs" aria-label="Course selection"></section>
+
+    <section class="stats" id="stats">
+      <article class="stat-card total">
+        <span>Total allocated</span>
+        <strong id="totalCount">0</strong>
+        <small>working systems for selected course</small>
+      </article>
+      <article class="stat-card ram8">
+        <span>8 GB systems</span>
+        <strong id="ram8">0</strong>
+        <small>unmarked systems</small>
+      </article>
+      <article class="stat-card ram12">
+        <span>12 GB systems</span>
+        <strong id="ram12">0</strong>
+        <small>marked with #</small>
+      </article>
+      <article class="stat-card ram16">
+        <span>16 GB systems</span>
+        <strong id="ram16">0</strong>
+        <small>marked with *</small>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <div class="panel arrangement-panel">
+        <div class="panel-head">
+          <div>
+            <span class="eyebrow">SEATING ARRANGEMENT</span>
+            <h3>Computer room layout</h3>
+          </div>
+          <div class="legend">
+            <span><i class="dot selected"></i>Selected course</span>
+            <span><i class="dot other"></i>Other course</span>
+            <span><i class="dot Not Working"></i>Not working</span>
+          </div>
+        </div>
+        <div class="room-frame">
+          <div class="room-label">FRONT / BOARD</div>
+          <div class="seat-grid" id="seatGrid"></div>
+          <div class="aisle-label">AISLE</div>
+          <div class="room-label back">BACK</div>
+        </div>
+      </div>
+
+      <aside class="panel list-panel">
+        <div class="panel-head">
+          <div>
+            <span class="eyebrow">ALLOCATED SYSTEMS</span>
+            <h3 id="listTitle">Selected course</h3>
+          </div>
+          <span class="count-pill" id="listCount">0</span>
+        </div>
+        <div class="system-list" id="systemList"></div>
+      </aside>
+    </section>
+
+    <section class="panel info-panel">
+      <div>
+        <span class="eyebrow">LEGEND</span>
+        <h3>How the spreadsheet notation is interpreted</h3>
+      </div>
+      <div class="notation">
+        <div><b>*</b><span>16 GB system</span></div>
+        <div><b>#</b><span>12 GB system</span></div>
+        <div><b>8</b><span>8 GB system (no marker)</span></div>
+        <div class="dark"><b>■</b><span>Not working / unavailable</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Computer Room System Viewer</span>
+    <span id="footerSummary"></span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
